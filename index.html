@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo.svg" />
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header>
+
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo" src="assets/img/logo.svg" alt="">
+            </a>
+        </div>
+
+        <!-- NAVBAR -->
+        <nav>
+            <a href="index.html">
+                <div class="active">Accueil</div>
+            </a>
+            <a href="membres.html">
+                <div>Membres</div>
+            </a>
+            <a href="photos.html">
+                <div>Photos</div>
+            </a>
+            <a href="souvenirs.html">
+                <div>Souvenirs</div>
+            </a>
+
+            <style>
+                .darkmobile {
+                    display: none;
+                }
+            </style>
+
+            <div style="margin-left:20px" class="darkmode darkmobile">
+                <input type="checkbox" class="checkbox" id="checkbox" onclick="pcd()">
+                <label for="checkbox" class="label">
+                    <div class='ball'></div>
+                </label>
+            </div>
+        </nav>
+
+        <!-- DARK MODE -->
+        <div class="darkmode darkdesktop">
+            <input type="checkbox" class="checkbox" id="checkbox" onclick="pcd()">
+            <label for="checkbox" class="label">
+                <div class='ball'></div>
+            </label>
+        </div>
+
+        <script>
+            function pcd() {
+                var darkmode = document.body;
+                darkmode.classList.toggle("dark");
+            }
+        </script>
+    </header>
+
+
+
+    <section class="section1">
+
+        <div class="s1_gauche">
+            <div class="bulle1">
+                <h2>Bienvenue sur le site officiel de la Stax&nbsp!</h2>
+                <p>La Stax représente une équipe, des amis, une famille.
+                    Souvernirs, Anecdotes et fous rires, y sont partagés.
+                    Pour le meilleur ou pour le pire, c’est un joli rassemblement de chtarbés. </p>
+                <div class="btn">
+                    <a href="#section2"> Voir plus </a>
+                </div>
+            </div>
+        </div>
+        <div class="s1_droite">
+            <img src="assets/img/accueil.svg" alt="">
+            <a href="">
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- Section 2 -->
+    <section class="section2" id="section2">
+        <div>
+
+            <h2>Historique </h2>
+
+            <div class="historique">
+
+                <div class="historique_gauche">
+
+                    <p>Tout a commencé sur Minecraft, un simple jeu de cube. Sur un serveur, dénommé Lifecraft... et
+                        depuis ce
+                        simple jeu de cube, une team est née.
+                        <br>
+                        A l’origine, la majorité de ses membres étaient issus de la SkoZ, team qui avait pour but
+                        d’éradiquer
+                        toutes les petites merd** (#Andrea_du_69). A cette connaissance, un héros fit son apparation, le
+                        grand
+                        DesNox, plus connu aujourd’hui sous le nom de Ju.
+
+
+                    </p>
+                </div>
+
+                <div class="historique_droite">
+                    <!-- <img src="assets/img/photodegroupe.png" alt=""> -->
+
+
+
+                    <div class="slider">
+                        <div class="wrapper">
+                            <img src="assets/img/groupe1.jpg" alt="">
+                            <img src="assets/img/groupe2.jpg" alt="">
+                            <img src="assets/img/groupe3.jpg" alt="">
+                            <img src="assets/img/groupe4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="historique_bas">
+                <p>Ce dernier décida de fonder un autre groupe avec tous les membres exclus et ainsi, le 29 avril 2017,
+                    naquit la Stax ! (Youhouuuuu) UWU
+                    Jour après jour, année après année, la Stax a su se développer, des membres prirent parti à cette
+                    aventure et d’autres sont partis tels des gros fils de put** mais c’est pas grave mdr, dommage pour
+                    eux.
+                    Aujourd’hui, ce groupe d’amis est devenu une grande et belle famille, et compte 25 membres à son
+                    actif... et bientôt 26. (#Quelqu’un)</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Section 3 -->
+    <section class="section3" id="section3">
+        <div>
+
+            <h2>Objectifs</h2>
+
+            <div class="objectif">
+                <img src="assets/img/obj1.svg" alt="">
+                <img src="assets/img/obj2.svg" alt="">
+                <img src="assets/img/obj3.svg" alt="">
+                <img src="assets/img/obj4.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <a href="https://discord.gg/dtpxEYgjCC"> -->
+    <a href="">
+        <img class="discord" src="assets/img/discord.svg" alt="">
+    </a>
+
+
+
+</body>
+
+</html>

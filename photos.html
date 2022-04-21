@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/photos.css">
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo.svg" />
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header>
+
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/logo.svg" alt="">
+            </a>
+        </div>
+
+        <!-- NAVBAR -->
+        <nav>
+            <a href="index.html">
+                <div>Accueil</div>
+            </a>
+            <a href="membres.html">
+                <div>Membres</div>
+            </a>
+            <a href="photos.html">
+                <div class="active">Photos</div>
+            </a>
+            <a href="souvenirs.html">
+                <div>Souvenirs</div>
+            </a>
+        </nav>
+
+        <!-- DARK MODE -->
+        <div class="darkmode">
+            <input type="checkbox" class="checkbox" id="checkbox" onclick="pcd()">
+            <label for="checkbox" class="label">
+                <div class='ball'></div>
+            </label>
+        </div>
+
+        <script>
+            function pcd() {
+                var darkmode = document.body;
+                darkmode.classList.toggle("dark");
+            }
+        </script>
+    </header>
+
+    <section class="photos">
+        <div class="tri_photos">
+            <div class="tri_photos_2022 active">2022</div>
+            <div class="tri_photos_2021">2021</div>
+            <div class="tri_photos_2019">2019</div>
+
+        </div>
+
+
+
+        <div class="photo photos_2022">
+            <img src="assets/img/photo1_2022.jpg" alt="">
+            <img src="assets/img/photo2_2022.jpg" alt="">
+            <img src="assets/img/photo3_2022.jpg" alt="">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/f3NWacRsO5k"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="photo photos_2021">
+            <img src="assets/img/photo1_2021.jpg" alt="">
+            <img src="assets/img/photo2_2021.jpg" alt="">
+            <img src="assets/img/photo3_2021.jpg" alt="">
+            <img src="assets/img/photo4_2021.jpg" alt="">
+        </div>
+
+        <div class="photo photos_2019">
+            <img src="assets/img/photo1_2019.jpg" alt="">
+            <img src="assets/img/photo2_2019.jpg" alt="">
+        </div>
+
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>

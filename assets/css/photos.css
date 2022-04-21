@@ -1,0 +1,53 @@
+.photos {
+    width: 100%;
+    height: fit-content;
+    min-height:90vh;
+    padding : 10vh 5vw;
+}
+
+.tri_photos {
+    display: flex;
+    background-color: var(--bleusombre);
+    width: fit-content;
+    padding: 1vh 1vw;
+    border-radius: 50px;
+    margin-bottom: 3vh;
+}
+
+.tri_photos div {
+    color: var(--noir);
+    padding : 1vh 1vw;
+    transition: all 0.2s ease-out;
+    margin: 0 0.25vw;
+    cursor: pointer;
+}
+
+div> .active {
+    background-color: var(--blanc);
+    border-radius: 50px;
+}
+
+.photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.photo img {
+    width: 45%;
+    height: auto;
+    margin: 2vh 2vw;
+}
+
+.photos_2022 img {
+    width: auto;
+    height: 70vh;
+}
+
+.photos_2021, .photos_2019 {
+    display : none;
+}
+
+.photos_2019 img {
+    width: 30%;
+}

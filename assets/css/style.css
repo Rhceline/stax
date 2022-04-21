@@ -1,0 +1,521 @@
+/* <------------------------------------> */
+/* ---------- VARIBLES POUR LES COULEURS  ---------- */
+/* <------------------------------------> */
+:root {
+    --blanc: #FFFFFF;
+    --noir: #202020;
+    --bleusombre: #F1F5F9;
+    --roseclair: #FFA7AE;
+    --rougeclair: #FF5A67;
+}
+
+
+/* <------------------------------------> */
+/* ---------- FONT FUTURA  ---------- */
+/* <------------------------------------> */
+
+
+@font-face {
+    font-family: 'futura_book';
+    src: url('../fonts/Futura-Book.woff2') format('woff2'),
+        url('../fonts/Futura-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'futura_bold';
+    src: url('../fonts/Futura-Bold.woff2') format('woff2'),
+        url('../fonts/Futura-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* <------------------------------------> */
+/* ---------- FONT EXTENDED  ---------- */
+/* <------------------------------------> */
+
+
+@font-face {
+    font-family: 'monument_extendedregular';
+    src: url('../fonts/monumentextended-regular-webfont.woff2') format('woff2'),
+        url('../fonts/monumentextended-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'monument_extendedultrabold';
+    src: url('../fonts/monumentextended-ultrabold-webfont.woff2') format('woff2'),
+        url('../fonts/monumentextended-ultrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* <------------------------------------> */
+/* ---------- GENERAL  ---------- */
+/* <------------------------------------> */
+html {
+    scroll-behavior: smooth;
+    height: -webkit-fill-available;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    font-family: 'futura_book';
+    overflow-x: hidden;
+    color: var(--noir);
+}
+
+a {
+    text-decoration: none;
+    color: var(--noir)
+}
+
+h2 {
+    margin: 0;
+    font-family: 'monument_extendedregular';
+    font-size: 2.5rem;
+    color: var(--rougeclair);
+}
+
+h3 {
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+section {
+    background-color: var(--blanc);
+}
+
+/* <------------------------------------> */
+/* ---------- PAGE D'ACCUEIL ---------- */
+/* <------------------------------------> */
+
+/* Menu  */
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-height: 10vh;
+    padding: 5vh 2vw;
+    align-items: center;
+    background-color: var(--blanc);
+}
+
+.logo img {
+    height: 4vh;
+    width: auto;
+}
+
+
+
+/* .logo2 {
+    display: none;
+} */
+
+nav {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bleusombre);
+    padding: 1vh 1vw;
+    border-radius: 50px;
+    z-index: 10;
+}
+
+
+nav div {
+    color: var(--noir);
+    padding: 1vh 1vw;
+    transition: all 0.2s ease-out;
+    margin: 0 0.25vw;
+}
+
+nav div:hover {
+    background-color: var(--roseclair);
+    border-radius: 50px;
+}
+
+a .active {
+    background-color: var(--blanc);
+    border-radius: 50px;
+}
+
+a .active:hover {
+    background-color: var(--blanc);
+}
+
+.darkmode {
+    width: 70px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: var(--gris)
+}
+
+
+/* Section 1  */
+.section1 {
+    display: flex;
+    min-height: 90vh;
+    width: 100%;
+    padding: 2vh 8vw;
+    align-items: center;
+}
+
+.s1_gauche,
+.s1_droite {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.s1_gauche {
+    padding-right: 5vw;
+}
+
+.s1_droite {
+    position: relative;
+}
+
+
+.s1_droite img {
+    width: 90%;
+}
+
+.btn {
+    background-color: var(--roseclair);
+    padding: 1vh 1vw;
+    font-family: 'monument_extendedregular';
+    position: absolute;
+    left: 0;
+    height: 10vh;
+    margin-top: 4vh;
+}
+
+.btn a {
+    position: relative;
+    left: 50%;
+    top: 20%;
+    font-size: 1.3rem;
+}
+
+/* Section 2  */
+.section2,
+.section3 {
+    min-height: 100vh;
+    padding: 10vh 8vw;
+    background-color: var(--bleusombre);
+    display: flex;
+    align-items: center;
+}
+
+.section2 h2,
+.section3 h2 {
+    color: var(--noir);
+}
+
+.historique {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.historique>div {
+    width: 45%;
+}
+
+.historique_droite img {
+    width: 80%;
+}
+
+.historique_bas {
+    padding-top: 6vh;
+    width: 90%;
+}
+
+/* Section 3  */
+.section3 {
+    background-color: var(--blanc);
+}
+
+.section3 .objectif {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.objectif img {
+    width: 20%
+}
+
+
+.discord {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+
+
+
+
+
+/* SLIDER */
+
+.slider {
+    width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide 13s infinite;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+
+
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    width: 50px;
+    height: 26px;
+    background-color: var(--bleusombre);
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: var(--noir);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
+}
+
+.dark {
+    --blanc: #202020;
+    --noir: white;
+    --bleusombre: #2F2F2F;
+    --roseclair: #464646;
+    --rougeclair: #FF002D;
+}
+
+.dark .logo img {
+    filter: invert(1);
+}
+
+
+
+@media screen and (max-width: 1100px) {
+
+    /* Section 1  */
+    .section1 {
+        min-height: 100vh;
+    }
+
+
+    /* Slider section 2  */
+    .slider {
+        width: 350px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 850px) {
+
+    /* Section1  */
+    .section1 {
+        min-height: 90vh;
+        padding: 2vh 8vw 6vh 8vw;
+    }
+
+    .s1_gauche,
+    .s1_droite {
+        width: 90%;
+    }
+
+    .s1_droite {
+        display: none;
+    }
+
+    /* SECTION2  */
+    .section2 {
+        padding: 10vh 12vw 10vh 8vw;
+    }
+
+    .slider {
+        width: fit-content;
+    }
+
+    .historique {
+        flex-direction: column;
+    }
+
+    .historique>div {
+        width: 100%;
+    }
+
+    .historique_bas {
+        width: 100%;
+    }
+
+    /* Section3 */
+    .objectif img {
+        width: 30%;
+        height: auto;
+        margin: 4vh 5vw;
+    }
+
+    .section3 .objectif {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .logo {
+        display: none;
+    }
+
+    header {
+
+        justify-content: flex-end;
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+
+    .darkmobile {
+        display: block !important;
+        height: auto !important;
+    }
+
+    .darkmobile:hover{
+        background-color: transparent !important;
+    }
+
+    .darkmode label {
+        background-color:var(--rougeclair);
+    }
+
+    .darkdesktop {
+        display: none;
+    }
+    .section1 {
+        padding: 2vh 8vw 6vh 15vw;
+    }
+
+    .s1_gauche, .s1_droite {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.175rem;
+    }
+
+    .btn a {
+        font-size: 1.1rem;
+    }
+
+    nav {
+        top: 2%;
+        /* left: 5%; */
+        /* transform: translateX(-0%); */
+    }
+
+
+
+    /* Section3 */
+    .objectif img {
+        width: auto;
+        width: 40vh;
+        margin: 4vh 4vw;
+    }
+
+}

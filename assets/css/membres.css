@@ -1,0 +1,152 @@
+
+.membres {
+    width: 100%;
+    padding : 10vh 5vw;
+    display: flex;
+    justify-content : space-between;
+    flex-wrap: wrap;
+    background-color:var(--blanc)
+}
+
+/* Boite membre  */
+.membre {
+    background-color: var(--bleusombre);
+    width: 25vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6vh 0;
+    position: relative;
+    font-size: 1.2rem;
+    margin: 5vh 0;
+}
+
+.pdp img {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 0%; 
+    left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn2 {
+    background-color: var(--roseclair);
+    padding: 1.5vh 2vw;
+    width:fit-content;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.membre p {
+    color: var(--gristexte);
+    padding-bottom: 2vh;
+    border-bottom: 5px solid var(--noir);
+    width: 19vw;
+}
+
+.popup_droite {
+    font-size: 1.1rem;
+}
+
+.membres h2, .membres h3 {
+    font-family: 'monument_extendedultrabold';
+    color: var(--noir);
+}
+
+/* POPUP */
+.popup {
+    color: var(--noir);
+    font-family: 'futura_book';
+    background-color: var(--blanc);
+    height: 80vh;
+    width: 50vw;
+    z-index: 3;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5vh 5vw;
+    margin: auto;
+    font-size: 1rem;
+    flex-direction: column;
+    display: none;
+}
+
+.contenu_popup {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.popup_gauche, .popup_droite {
+    width: 45%;
+}
+.popup_droite {
+    width: 55%;
+}
+
+.popup_gauche {
+    background-color: var(--gris);
+    height: 80%;
+}
+
+/* BOUTON POUR QUITTER LA POPUP */
+.popup .exit {
+    color: var(--noir);
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+
+/* Media queries  */
+
+
+@media screen and (max-width: 850px) {
+
+    .membres {
+        justify-content: space-around;
+    }
+
+    .membre {
+        width:40vw;
+    }
+
+    .popup {
+        width: 80vw;
+        height : fit-content;
+        padding: 5vh 5vw 10vh 5vw;
+    }
+
+    .popup_droite h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .membres {
+        justify-content: center;
+    }
+
+    .membre {
+        width: 80vw;
+    }
+
+    .contenu_popup {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .popup_gauche {
+        display:none;
+    }
+
+    .popup_droite {
+        width: 100%;
+    }
+}

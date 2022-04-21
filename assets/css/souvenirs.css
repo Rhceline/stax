@@ -1,0 +1,105 @@
+.souvenirs {
+    width: 100%;
+    height: fit-content;
+    min-height:90vh;
+    padding : 10vh 5vw;
+}
+
+.tri_souvenirs {
+    display: flex;
+    background-color: var(--bleusombre);
+    width: fit-content;
+    padding: 1vh 1vw;
+    border-radius: 50px;
+    margin-bottom: 3vh;
+}
+
+.tri_souvenirs div {
+    color: var(--noir);
+    padding : 1vh 1vw;
+    transition: all 0.2s ease-out;
+    margin: 0 0.25vw;
+    cursor: pointer;
+}
+
+div> .active {
+    background-color: var(--blanc);
+    border-radius: 50px;
+}
+
+
+.btn2 {
+    background-color: var(--roseclair);
+    padding: 1.5vh 2vw;
+    width:fit-content;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.btn2 a {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    font-size: 1.3rem; 
+}
+
+.boite {
+    background-color: var(--bleusombre);
+    padding: 4vh 4vw;
+    border-radius: 10px;
+    width: 80vw;
+    display: block;
+    margin: 5vh auto 0 auto;
+    height: fit-content;
+}
+
+.message2021, .message2020 {
+    display:none;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.message2021 .ligne,.message2020 .ligne {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+
+.btnmoins2021, .btnmoins2020 {
+    display:none;
+}
+
+.boite_2020 {
+    display:none;
+}
+
+.message {
+    background-color: var(--blanc);
+    width: 45%;
+    padding: 2vh 2vw;
+}
+
+.message1 {
+    border-radius: 50px 0px 50px 50px;
+}
+
+.message2 {
+    border-radius: 0px 50px 50px 50px;
+}
+
+.message a {
+    font-family: 'futura_bold';
+    transition: 0.2s all ease-in-out;
+}
+
+.message a:hover {
+    color: var(--rougeclair);
+}
+
+video {
+    display: block;
+    margin: auto;
+}
